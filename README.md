@@ -1,10 +1,11 @@
 # PySpark-Driven-Banking-Data-Processing-and-Analysis
 This project leverages PySpark to design and implement a scalable banking data processing and analysis framework. The primary objective is to extract valuable insights from large banking datasets, enabling informed decision-making and optimizing banking operations.
 
-Introduction
+**Introduction**
+
 In this project, we utilize PySpark, a powerful Python library for big data processing, to analyze a real-world banking dataset. The objective is to extract insights into customer behavior by cleaning, transforming, and analyzing the data. Through various stages, including data cleaning, feature engineering, exploratory data analysis (EDA), and model building, we aim to demonstrate how PySpark can be applied to address real-world challenges in the banking industry.
 
-Data
+**Data**
 The dataset used in this project is sourced from a bank and contains critical information such as:
 
 Customer demographics
@@ -12,7 +13,7 @@ Account balances
 Transaction history
 The data is stored in a CSV file, which will be loaded into a PySpark DataFrame for comprehensive analysis.
 
-Data Cleaning
+**Data Cleaning**
 The initial phase involves cleaning the data to ensure its quality. This includes:
 
 Handling missing values
@@ -20,7 +21,7 @@ Removing duplicate records
 Casting data types to appropriate formats
 We leverage PySpark’s built-in functions such as dropna(), dropDuplicates(), and cast() for effective data cleaning.
 
-Feature Engineering
+**Feature Engineering**
 Once the data is cleaned, we create new features that enhance our analysis. These features include:
 
 Average account balance
@@ -102,7 +103,9 @@ predictions = model.transform(test)
 
 # Evaluate the model
 print("Accuracy: ", evaluator.evaluate(predictions))
-Conclusion
+
+**Conclusion**
+
 This project showcases how PySpark can be effectively utilized to analyze banking transactions and predict customer churn. By leveraging PySpark’s robust data processing and machine learning capabilities, we have successfully cleaned and prepared the data, performed exploratory data analysis, and developed a predictive model.
 
 This analysis not only highlights the potential of PySpark in the banking sector but also serves as a valuable reference for those looking to extract insights from large datasets in similar contexts.
