@@ -3,48 +3,53 @@ This project leverages PySpark to design and implement a scalable banking data p
 
 **Introduction**
 
-In this project, we utilize PySpark, a powerful Python library for big data processing, to analyze a real-world banking dataset. The objective is to extract insights into customer behavior by cleaning, transforming, and analyzing the data. Through various stages, including data cleaning, feature engineering, exploratory data analysis (EDA), and model building, we aim to demonstrate how PySpark can be applied to address real-world challenges in the banking industry.
+In this project, we utilize **PySpark**, a powerful Python library for big data processing, to analyze a real-world banking dataset. The objective is to extract insights into customer behavior by cleaning, transforming, and analyzing the data. Through various stages, including data cleaning, feature engineering, exploratory data analysis (EDA), and model building, we aim to demonstrate how PySpark can be applied to address real-world challenges in the banking industry.
 
 **Data**
 The dataset used in this project is sourced from a bank and contains critical information such as:
 
-Customer demographics
-Account balances
-Transaction history
+*Customer demographics
+*Account balances
+*Transaction history
+
 The data is stored in a CSV file, which will be loaded into a PySpark DataFrame for comprehensive analysis.
 
 **Data Cleaning**
 The initial phase involves cleaning the data to ensure its quality. This includes:
 
-Handling missing values
-Removing duplicate records
-Casting data types to appropriate formats
+*Handling missing values
+*Removing duplicate records
+*Casting data types to appropriate formats
+
 We leverage PySpark’s built-in functions such as dropna(), dropDuplicates(), and cast() for effective data cleaning.
 
 **Feature Engineering**
 Once the data is cleaned, we create new features that enhance our analysis. These features include:
 
-Average account balance
-Number of transactions
-Customer age
+*Average account balance
+*Number of transactions
+*Customer age
+
 These new attributes will provide deeper insights into customer behavior.
 
-Exploratory Data Analysis (EDA)
+**Exploratory Data Analysis (EDA)**
 After cleaning and feature engineering, we conduct EDA to better understand the dataset. Key operations include:
 
-Statistical summaries using describe()
-Grouping data by churn status with groupBy()
-Visualizing the average account balance
+*Statistical summaries using describe()
+*Grouping data by churn status with groupBy()
+*Visualizing the average account balance
+
 We will utilize PySpark’s visualization capabilities, combined with libraries like Matplotlib, for meaningful data representation.
 
-Model Building
+**Model Building**
 The final step involves building a predictive model to forecast customer churn. We will:
 
-Train and evaluate various models using PySpark’s machine learning library (ml)
-Employ techniques such as cross-validation and grid search to optimize model parameters
-Sample Code Implementation
+*Train and evaluate various models using PySpark’s machine learning library (ml)
+*Employ techniques such as cross-validation and grid search to optimize model parameters
+
+**Sample Code Implementation**
 python
-Copy code
+
 # Import necessary libraries
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
